@@ -3,7 +3,7 @@ var path = require('path');
 var app = express();
 
 // port
-app.set('port', (process.env.PORT || 80));
+app.set('port', (process.env.PORT || 8080));
 
 // view engine setup
 app.set('views', path.join(__dirname, '/public'));
