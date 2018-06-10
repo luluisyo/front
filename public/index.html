@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><title>client</title><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css><link rel=stylesheet type=text/css href=style.css><script src=https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js>function justNumbers(e)
+        {
+        var keynum = window.event ? window.event.keyCode : e.which;
+        if ((keynum == 8) || (keynum == 46))
+        return true;
+         
+        return /\d/.test(String.fromCharCode(keynum));
+        }</script><link href=/static/css/app.687424f940dff9d618f958ae462f2353.css rel=stylesheet></head><script>function justNumbers(e)
+        {
+        var keynum = window.event ? window.event.keyCode : e.which;
+        if ((keynum == 8) || (keynum == 46))
+        return true;
+         
+        return /\d/.test(String.fromCharCode(keynum));
+        }
+       function validar(e) {
+    tecla = (document.all)?e.keyCode:e.which;
+    if (tecla==8) return true;
+    patron = /\d/;
+    te = String.fromCharCode(tecla);
+    return patron.test(te); 
+}</script><body><div id=app></div><script type=text/javascript src=/static/js/manifest.e4c149c4a3c930c68488.js></script><script type=text/javascript src=/static/js/vendor.c5a96b96654ac32705f6.js></script><script type=text/javascript src=/static/js/app.a57ab9f92a3cf42bd9ef.js></script></body></html>
