@@ -1,22 +1,13 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><title>Simon Bolivar</title><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css><link rel=stylesheet type=text/css href=style.css><script src=https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js>function justNumbers(e)
-        {
-        var keynum = window.event ? window.event.keyCode : e.which;
-        if ((keynum == 8) || (keynum == 46))
-        return true;
-         
-        return /\d/.test(String.fromCharCode(keynum));
-        }</script><link href=/static/css/app.4a55ba09df197b6811bb9a140fa2e4e9.css rel=stylesheet></head><script>function justNumbers(e)
-        {
-        var keynum = window.event ? window.event.keyCode : e.which;
-        if ((keynum == 8) || (keynum == 46))
-        return true;
-         
-        return /\d/.test(String.fromCharCode(keynum));
-        }
-       function validar(e) {
-    tecla = (document.all)?e.keyCode:e.which;
-    if (tecla==8) return true;
-    patron = /\d/;
-    te = String.fromCharCode(tecla);
-    return patron.test(te); 
-}</script><body><div id=app></div><script type=text/javascript src=/static/js/manifest.5dd5d6400b6baf621a12.js></script><script type=text/javascript src=/static/js/vendor.c5a96b96654ac32705f6.js></script><script type=text/javascript src=/static/js/app.160ef1a297835edb3e08.js></script></body></html>
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><title>Simon Bolivar</title><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css><link rel=stylesheet type=text/css href=style.css><script src=https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script><script type=text/javascript>function validarl(e) {
+tecla = (document.all) ? e.keyCode : e.which;
+if (tecla==8) return true;
+patron =/[A-Za-z\s]/;
+te = String.fromCharCode(tecla);
+return patron.test(te);
+}</script><script type=text/javascript>function validarn(e) {
+tecla = (document.all) ? e.keyCode : e.which;
+if (tecla==8) return true;
+patron = /\d/;
+te = String.fromCharCode(tecla);
+return patron.test(te);
+}</script><link href=/static/css/app.3e21e1d89ca7bccdcc63140deb82f288.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.1905bf44ae78c91a5fbe.js></script><script type=text/javascript src=/static/js/vendor.b551d4d45d5d3bb015d2.js></script><script type=text/javascript src=/static/js/app.1ad34bdbcdfa60b50c75.js></script></body></html>
